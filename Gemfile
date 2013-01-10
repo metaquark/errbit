@@ -19,6 +19,8 @@ gem 'rails_autolink', '~> 1.0.9'
 # Please don't update hoptoad_notifier to airbrake.
 # It's for internal use only, and we monkeypatch certain methods
 gem 'hoptoad_notifier', "~> 2.4"
+gem 'thin'
+gem 'rack', '1.4.1'
 
 
 # Remove / comment out any of the gems below if you want to disable
