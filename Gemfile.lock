@@ -360,7 +360,6 @@ DEPENDENCIES
   oruen_redmine_client
   pivotal-tracker
   pry-rails
-  rack (= 1.4.1)
   rack-ssl
   rack-ssl-enforcer
   rails (= 3.2.11)
