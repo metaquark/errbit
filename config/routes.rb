@@ -25,6 +25,7 @@ Errbit::Application.routes.draw do
     end
   end
 
+  get '/apps/api_key_redirect' => 'apps#api_key_redirect'
   resources :apps do
     resources :problems do
       resources :notices

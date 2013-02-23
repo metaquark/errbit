@@ -1,5 +1,5 @@
 class AppsController < InheritedResources::Base
-  before_filter :require_admin!, :except => [:index, :show]
+  before_filter :require_admin!, :except => [:index, :show, :api_key_redirect]
   before_filter :parse_email_at_notices_or_set_default, :only => [:create, :update]
   respond_to :html
 
@@ -24,6 +24,12 @@ class AppsController < InheritedResources::Base
         @problems = resource.problems.unresolved.ordered
       end
     end
+  end
+
+  def api_key_redirect
+    @app = App.where(:api_key => params[:api_key]).first
+    raise ActiveRecord::RecordNotFound unless @app
+    redirect_to @app
   end
 
   def create
