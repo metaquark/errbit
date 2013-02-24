@@ -47,14 +47,15 @@ a.action  { float: right; font-size: 0.9em;}
   height: 71px;
   border-bottom: 1px solid #fff;
   position:relative;
-  background: #000000;
+  background: #fff;
+  border-bottom: thin solid #888;
 }
 #header > div {
   height: 71px;
 }
 #header #site-name {
   display: block;
-  width: 88px;
+  width: 179px;
   height: 31px;
   position: absolute;
   top: 22px;
@@ -72,8 +73,8 @@ a.action  { float: right; font-size: 0.9em;}
 #header #session-links li {
   float: right;
   margin-left: 10px;
-  color: #ccc;
-  background-color: #1e1e1e;
+  color: #333;
+  background-color: #86db78;
   border-radius: 30px;
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
@@ -86,10 +87,10 @@ a.action  { float: right; font-size: 0.9em;}
   -webkit-box-shadow: 0 0 3px #69c;
 }
 #header #session-links li:hover a {
-  color: white;
+  color: #333;
 }
 #header #session-links a {
-  color: #ccc;
+  color: #333;
   padding: 0 14px;
   line-height: 30px;
 }
@@ -105,12 +106,13 @@ a.action  { float: right; font-size: 0.9em;}
 #nav-bar {
   position: absolute;
   bottom: 0;
-  left: 172px;
+  left: 222px;
 }
 #nav-bar li {
   float: left;
   height: 34px;
   margin-right: 12px;
+  margin-bottom:0px;
   color: #666;
   background-color: #d0d0d0;
   background-image: none;
@@ -126,8 +128,8 @@ a.action  { float: right; font-size: 0.9em;}
   border-color: #fff;
   background: #FFF url(images/button-bg.png) 0 -2px repeat-x;
   border-width:1px 1px 0;
-  margin-bottom:-2px;
-  height: 37px;
+  margin-bottom:0px;
+  height: 35px;
 }
 #nav-bar li.active a {
   color: #333;
